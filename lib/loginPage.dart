@@ -19,8 +19,17 @@ class _LoginPageState extends State<loginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              myText("Email", false),
-              myText("Password", true),
+              Text(
+                'Login',
+                style: TextStyle(
+                  fontSize: 30, // Set the desired font size for the Login text
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              loginPageInput("Email", false),
+              loginPageInput("Password", true),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
